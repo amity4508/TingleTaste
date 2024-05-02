@@ -5,11 +5,6 @@ import { Home } from '../Pages/HomeLayouts/home';
 import { About } from '../Pages/About';
 import { Footer } from '../Components/Footer/Footer';
 
-
-
-
-
-
 export const UserRoute = () => {
   return (
    <BrowserRouter>

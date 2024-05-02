@@ -2,9 +2,12 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import img1 from '../../assets/images/New folder/asset 0.jpeg'
-import img2 from '../../assets/images/New folder/asset 1.jpeg'
-import img3 from '../../assets/images/New folder/asset 0.jpeg'
+import img1 from '../../assets/images/data/littichokha2.jpg'
+import img2 from '../../assets/images/data/makhanakheer2.jpg'
+import img3 from '../../assets/images/data/poha1.jpg'
+import img4 from '../../assets/images/data/sattu1.jpg'
+import img5 from '../../assets/images/data/lassi1.jpg'
+import img6 from '../../assets/images/data/mutterkachodi1.jpg'
 
 
 
@@ -33,26 +36,42 @@ export const Hero = () =>{
 
 export const slides = [
   {
-    title: 'DELICIOUS ITALIAN HOME MADE CUISINE',
-    subtitle: 'Create engaging content Lorem ipsum dolor  amet Lorem ipsum dolor sit  amet Lorem ipsum dolor sit  sit amet amet consectetur adipisicing elit. Hic, inventore?',
-    buttonText: 'view menu',
+    title: `DELICIOUS HOME MADE <span style="color:orange">Litti Chokha</span> `,
+    subtitle: 'Create sum dolor  amet Lorem ipsum dolor sit  amet Lorem ipsum dolor sit  sit amet amet consectetur adipisicing elit. Hic, inventore?',
+  
     image: img1,
   },
   {
-    title: 'DELICIOUS ITALIAN HOME MADE CUISINE',
-    subtitle: 'Create engaging content Lorem ipsum  amet Lorem ipsum dolor sit  dolor sit amet amet consectetur adipisicing elit. Hic, inventore?',
-    buttonText: 'Reserve now',
+    title: 'DELICIOUS HOME MADE  <span style="color:orange">Makhana Kheer</span> ',
+    subtitle: 'Create sum  amet Lorem ipsum dolor sit  dolor sit amet amet consectetur adipisicing elit. Hic, inventore?',
+  
     image: img2,
   },
   {
-    title: 'DELICIOUS ITALIAN HOME MADE CUISINE',
+    title: 'DELICIOUS HOME MADE <span style="color:orange"> Poha</span>',
     subtitle: 'Create engaging content Lorem ipsum dolor sit amet amet Lorem ipsum dolor sit amet amet consectetur adipisicing elit. Hic, inventore?',
-    buttonText: 'Talk to an Expert',
+  
     image: img3,
+  },
+  {
+    title: 'DELICIOUS HOME MADE <span style="color:orange"> Sattu</span>',
+    subtitle: 'Create engaging content Lorem ipsum dolor sit amet amet Lorem ipsum dolor sit amet amet consectetur adipisicing elit. Hic, inventore?',
+  
+    image: img4,
+  },
+  {
+    title: 'DELICIOUS HOME MADE <span style="color:orange">Lassi</span>',
+    subtitle: 'Create engaging content Lorem ipsum dolor sit amet amet Lorem ipsum dolor sit amet amet consectetur adipisicing elit. Hic, inventore?',
+    image: img5,
+  },
+  {
+    title: 'DELICIOUS HOME MADE <span style="color:orange">Mutter kacuari</span>',
+    subtitle: 'Create engaging content Lorem ipsum dolor sit amet amet Lorem ipsum dolor sit amet amet consectetur adipisicing elit. Hic, inventore?',
+ 
+    image: img6,
   },
   // Add more slide objects as needed
 ];
-
 
 
 export const HeroSlider = ({ slides }) => {
@@ -65,12 +84,12 @@ export const HeroSlider = ({ slides }) => {
   };
 
   return (
-    <div className='bg-white pb-10 relative '>
-      <div className='left-[-79px] z-10 top-[40%] fixed  '>
+    <div className=' container mx-auto bg-white pb-10 relative '>
+      {/* <div className='left-[-79px] z-10 top-[40%] fixed  '>
         <button className='text-white text-lg bg-orange-500 px-[50px] py-[6px] rotate-[-90deg] '>
           Enquire Now
         </button>
-      </div>
+      </div> */}
       <Swiper
         ref={swiperRef}
         spaceBetween={30}
@@ -80,9 +99,13 @@ export const HeroSlider = ({ slides }) => {
           disableOnInteraction: false,
         }}
         effect={'fade'}
-        pagination={{
+        // pagination={{
+        //   clickable: true,
+        //   el: '.swiper-pagination',
+        // }}
+             pagination={{
+          dynamicBullets: true,
           clickable: true,
-          el: '.swiper-pagination',
         }}
         navigation={{
           nextEl: '.button-next',
@@ -93,48 +116,42 @@ export const HeroSlider = ({ slides }) => {
       >
         {slides && slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className='flex  justify-between max-md:flex-col gap-30  relative'>
-              <div className='w-1/2 sm:h-[88vh]  max-sm:h-[70vh] py-5 max-md:w-full bg-white '>
-                <div className='flex justify-center container mx-auto mt-20 px-8 max-sm:ml-6 sm:ml-10'>
+            <div className=' flex max-sm:h-[80vh]  justify-between sm:flex-col lg:flex-row gap-30 max-sm:flex-col  relative bg-white pb-10 '>
+              <div className='  max-sm:h-full sm:py-5 max-sm:w-full sm:w-full lg:w-1/2 '>
+                <div className='flex justify-center container mx-auto mt-10 xl:px-8 sm:px-2 max-sm:px-3 '>
                   <div>
-                    <h1 className='sm:text-5xl max-sm:text-4xl font-extrabold text-start leading-[60px] jersey-25-regular text-black '>{slide.title}</h1>
+                   <div className='min-h-[160px]'>
+                   <h1  className='xl:text-5xl sm:text-4xl md:text-3xl max-sm:text-3xl font-extrabold text-start leading-[60px] jersey-25-regular text-black 'dangerouslySetInnerHTML={{ __html: slide.title}} ></h1>
                     <h1 className='mt-14 max-sm:mt-8 text-2xl max-sm:text-base  font-medium text-start text-black'>{slide.subtitle}</h1>
-                    <div className='text-start mt-16 flex gap-4'>
-                      <button className='text-white text-lg font-bold bg-orange-500 px-[30px] py-[8px] rounded '>
-                        {slide.buttonText}
+                   </div>
+                    <div className='text-start mt-14 flex gap-4   '>
+                      <button className='text-white text-lg font-bold bg-orange-500 px-[30px] xl:py-[8px] sm:px-[20px]  rounded '>
+                       View Menu
                       </button>
-                      <button className='text-white text-lg font-bold bg-orange-500 px-[30px] py-[8px] rounded '>
-                        {slide.buttonText}
+                      <button className='text-white text-lg font-bold bg-orange-500 px-[30px] xl:py-[8px] sm:px-[20px] rounded '>
+                       View Menu
                       </button>
                     </div>
                     
                   </div>
                 </div>
               </div>
-              <div className='relative max-sm:hidden'>
-                <img className=' sm:h-[520px] max-sm:h-[260px] lg:w-[780px] max-md:w-full shadow-2xl shadow-gray-700 ' src={slide.image} alt='' />
+              <div className='relative max-sm:mt-5 sm:px-2 max-sm:px-3  min-h-[500px] lg:sm:h-full'>
+                <img className=' sm:min-h-[450px]  lg:h-[490px] max-sm:h-[260px] lg:w-[780px] max-sm:w-full sm:w-full rounded border-2 shadow-lg border-orange-400 p-[1px] shadow-gray-700 ' src={slide.image} alt='' />
               </div>
+
+          
+
+           
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-        {/* Custom pagination */}
-        <div className='relative top-[-60px]   '>
-        <div className='swiper-pagination mt-5 flex justify-center space-x-2 relative left-[200px]'>
-          {slides && slides.map((_, index) => (
-            <div
-              key={index}
-              className='swiper-pagination-bullet bg-blue-800 w-3 h-3 rounded-full cursor-pointer'
-              onClick={() => handleClickPaginationBullet(index)}
-            ></div>
-          ))}
-        </div>
-      </div>
+     
+    
 
     
     </div>
     
   );
-};
-
-
+}; 

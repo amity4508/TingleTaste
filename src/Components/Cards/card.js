@@ -111,11 +111,11 @@ export const CardImg = ({ cardData }) => {
       </div>
 
       {modalOpen && (
-        <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-10 ">
-          <div className="bg-white p-8 relative ">
+        <div className="fixed top-[30px] left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center z-10 ">
+          <div className="bg-white p-4 relative ">
             <img src={selectedImage} alt="" />
-            <button className=" absolute top-0 right-0 px-2" onClick={closeModal}>
-              Close
+            <button className=" absolute top-0 shadow-sm shadow-gray-200 right-0 px-2 bg-white text-xl font-semibold " onClick={closeModal}>
+              X
             </button>
           </div>
         </div>

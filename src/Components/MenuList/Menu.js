@@ -80,7 +80,7 @@ const MenuData = [
 export const MenuCard = () => {
     return (
         <>
-            <div className="grid grid-cols-3 gap-5">
+            <div className="grid xl:grid-cols-3 max-sm:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 {MenuData.map((MenuItem, index) => (
                     <div key={index} className="card border-b hover:border-orange-500 py-5  ">
                      <h1 className="text-gray-600 font-semibold text-xl">{MenuItem.heading}</h1>

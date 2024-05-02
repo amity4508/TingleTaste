@@ -23,7 +23,7 @@ export const Timing = () =>{
                <p className="text-xl">Instant reservetion available</p>
                    <h1 className="text-4xl ma mt-5 text-gray-700 font-semibold" >BOOK A TABLE</h1>
                    <div className="mt-6">
-                   <Link to='' className ='text-gray-600 border p-2 text-xl'>CONTACT US</Link>
+                   <Link to='' className ='text-gray-600 border p-2 text-lg hover:bg-orange-500 hover:text-white'>CONTACT US</Link>
                    </div>
                </div>
                 </div>

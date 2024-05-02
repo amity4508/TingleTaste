@@ -41,14 +41,20 @@ export const Festivle = () => {
   ];
 
   return (
-    <div className="py-[100px]"
+    <div className="py-[50px] pb-32"
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(21,40,59, 0.5), rgba(21,40,59, 0.6)), url(${imgOneee})`,
         backgroundSize: "100% 100%",
         backgroundAttachment: "fixed",
       }}>
+        <div className=" container mx-auto px-8 text-center "> 
+        <p className="text-white text-xl">Ready for the coolest food</p>
+        <h1 className="text-4xl font-semibold text-white mt-5 mb-8" >COMING FESTIVALS</h1>
+
+        </div>
 
       <div className="flex max-sm:flex-col gap-5">
+
         <div className="w-full max-sm:w-full">
           <FestivleSlider festivle={FestivleData } />
         </div>
@@ -96,9 +102,9 @@ export const FestivleSlider = ({ festivle }) => {
       >
         {festivle.map((festivle, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-white shadow-lg border rounded-[20px] hover:bg-gray-600  hover:text-white min-h-[400px]   max-h-[400px] p-6 font-medium text-gray-500 group">
+            <div className="bg-white shadow-lg border rounded-[20px] hover:bg-gray-600  hover:text-white min-h-[430px]   max-h-[400px] p-6 font-medium text-gray-500 group">
             <div className="company-logo">
-                <img className="h-[200px] w-full" src={festivle.companyLogo} alt="" />
+                <img className="h-[180px] w-full" src={festivle.companyLogo} alt="" />
               </div>
 
               <p className="font-semibold text-gray-800 text-lg group-hover:text-orange-500 py-2">{festivle.author}</p>
