@@ -6,8 +6,8 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
 import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
-import testim1 from "../../assets/images/New folder/asset36.jpeg";
-import testim2 from "../../assets/images/New folder/asset38.jpeg";
+import testim1 from "../../assets/images/asset36.jpeg";
+import testim2 from "../../assets/images/asset38.jpeg";
 import { CiCamera } from "react-icons/ci";
 
 export const Testimonial = () => {

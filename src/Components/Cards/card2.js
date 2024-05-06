@@ -1,143 +1,142 @@
 import React from "react";
-import img1 from "../../assets/images/data/littichokha2.jpg";
-import img2 from "../../assets/images/data/badammilk1.jpg";
-import img3 from "../../assets/images/data/burger1.jpg";
-import img4 from "../../assets/images/data/chole kulche1.jpg";
-import img5 from "../../assets/images/data/coldcoffee2.jpg";
-import img6 from "../../assets/images/data/grilledsandwich1.jpg";
-import img7 from "../../assets/images/data/idli2.jpg";
-import img8 from "../../assets/images/data/lassi3.jpg";
-import img9 from "../../assets/images/data/makhanakheer1.jpg";
-
-import img10 from "../../assets/images/data/momos3.jpg";
-import img11 from "../../assets/images/data/mutterkachodi2.jpg";
-import img12 from "../../assets/images/data/pasta1.jpg";
-import img13 from "../../assets/images/data/pavbhaji3.jpg";
-import img14 from "../../assets/images/data/poha1.jpg";
-import img15 from "../../assets/images/data/samose2.jpg";
-import img16 from "../../assets/images/data/sattu1.jpg";
-import img17 from "../../assets/images/data/springrole1.jpg";
-import img18 from "../../assets/images/data/vada2.jpg";
-import img19 from "../../assets/images/data/vadapaw1.jpg";
 
 
-
+import badamMilk from "../../assets/images/data/badammilk1.jpg";
+import burger from "../../assets/images/data/burger.jpg"
+import cholekulche from "../../assets/images/data/cholekulche.jpg"
+import coldcoffee from "../../assets/images/data/coldcoffee.jpg";
+import grillsandwich from "../../assets/images/data/grillsandwich.jpg"
+import idli from "../../assets/images/data/idli.jpg"
+import kachorialoosabzi from "../../assets/images/data/kachori-with-aloo-sabzi.jpg"
+import lassi from "../../assets/images/data/lassi.webp"
+import littichokha from "../../assets/images/data/littichokha.jpg"
+import makhanakheer from "../../assets/images/data/makhanakheer.jpg"
+import momos from "../../assets/images/data/momos.webp"
+import mutterkachodi from "../../assets/images/data/mutterkachodi2.jpg";
+import pasta from "../../assets/images/data/pasta.jpg"
+import pavbhaji from "../../assets/images/data/pavbhaji.jpeg"
+import poha from "../../assets/images/data/poha.webp"
+import samosa from "../../assets/images/data/samosa.jpg"
+import sattu from "../../assets/images/data/sattu.webp"
+import springroll from "../../assets/images/data/springroll.jpg"
+import vada from "../../assets/images/data/vada.jpg"
+import vadapav from "../../assets/images/data/vadapav.jpg"
 
 export const card2Data = [
     {
-      image: img1,
+      image: littichokha,
       price: "0",
       title: "Litti chokha",
       // description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
     },
     
     {
-        image: img2,
+        image: badamMilk,
         price: "0",
         title: "Badam Milk",
         // description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
       {
-        image: img3,
+        image: burger,
         price: "0",
         title: "Burger",
         // description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
  
       {
-        image: img4,
+        image: cholekulche,
         price: "0",
         title: "Chole Kulche",
         // description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
       {
-        image: img5,
+        image: coldcoffee,
         price: "0",
         title: "Cold coffee",
         // description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
       {
-        image: img6,
+        image: grillsandwich,
         price: "0",
         title: "Grill Snadwiches",
         // description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
       {
-        image: img7,
+        image: idli,
         price: "0",
         title: "Idli",
         // description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
       {
-        image: img8,
+        image: lassi,
         price: "0",
         title: "Lassi",
         // description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
       {
-        image: img9,
+        image: makhanakheer,
         price: "0",
         title: "Makhana Kheer",
         // description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
       {
-        image: img10,
+        image: momos,
         price: "0",
         title: "Mommos",
         // description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
       {
-        image: img11,
+        image: mutterkachodi,
         price: "0",
         title: "Mutter kacuari",
         // description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
       {
-        image: img12,
+        image: pasta,
         price: "0",
         title: "Pasta",
         // description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
       {
-        image: img13,
+        image: pavbhaji,
         price: "0",
         title: "Paw bhaji",
         // description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
       {
-        image: img14,
+        image: poha,
         price: "0",
         title: "Poha",
         // description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
       {
-        image: img15,
+        image: samosa,
         price: "0",
         title: "Samosa",
         // description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
       {
-        image: img16,
+        image: sattu,
         price: "0",
         title: "Sattu",
         // description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
       {
-        image: img17,
+        image: springroll,
         price: "0",
         title: "Spring role",
         // description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
       {
-        image: img18,
+        image: vada,
         price: "0",
-        title: "Bada",
+        title: "Vada",
         // description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
       {
-        image: img19,
+        image: vadapav,
         price: "0",
-        title: "Bada Paw",
+        title: "Vada Paw",
         // description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
  

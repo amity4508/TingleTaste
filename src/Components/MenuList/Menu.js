@@ -1,5 +1,5 @@
 import React  from "react";
-import imgleft from '../../assets/images/New folder/asset35.jpeg'
+import imgleft from '../../assets/images/asset35.jpeg'
 
 export const Menu = () =>{
     

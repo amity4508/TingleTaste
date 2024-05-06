@@ -2,33 +2,25 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import img1 from '../../assets/images/data/littichokha2.jpg'
-import img2 from '../../assets/images/data/makhanakheer2.jpg'
-import img3 from '../../assets/images/data/poha1.jpg'
-import img4 from '../../assets/images/data/sattu1.jpg'
-import img5 from '../../assets/images/data/lassi1.jpg'
-import img6 from '../../assets/images/data/mutterkachodi1.jpg'
-
-
+import lassi from "../../assets/images/data/lassi.webp"
+import littichokha from "../../assets/images/data/littichokha.jpg"
+import makhanakheer from "../../assets/images/data/makhanakheer.jpg"
+import mutterkachodi from "../../assets/images/data/mutterkachodi2.jpg";
+import poha from "../../assets/images/data/poha.webp"
+import sattu from "../../assets/images/data/sattu.webp"
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
-
-
 // import required modules
 import { Autoplay, Pagination, Navigation, EffectFade, } from 'swiper/modules';
-
-
 export const Hero = () =>{
     return(
         <>
-
-<HeroSlider slides={slides}/>
-   </>
-
+        <HeroSlider slides={slides}/>
+     </>
     )
 }
 
@@ -38,37 +30,35 @@ export const slides = [
   {
     title: `DELICIOUS HOME MADE <span style="color:orange">Litti Chokha</span> `,
     subtitle: 'Create sum dolor  amet Lorem ipsum dolor sit  amet Lorem ipsum dolor sit  sit amet amet consectetur adipisicing elit. Hic, inventore?',
-  
-    image: img1,
+    image: littichokha,
   },
   {
     title: 'DELICIOUS HOME MADE  <span style="color:orange">Makhana Kheer</span> ',
     subtitle: 'Create sum  amet Lorem ipsum dolor sit  dolor sit amet amet consectetur adipisicing elit. Hic, inventore?',
-  
-    image: img2,
+    image: makhanakheer,
   },
   {
     title: 'DELICIOUS HOME MADE <span style="color:orange"> Poha</span>',
     subtitle: 'Create engaging content Lorem ipsum dolor sit amet amet Lorem ipsum dolor sit amet amet consectetur adipisicing elit. Hic, inventore?',
   
-    image: img3,
+    image: poha,
   },
   {
     title: 'DELICIOUS HOME MADE <span style="color:orange"> Sattu</span>',
     subtitle: 'Create engaging content Lorem ipsum dolor sit amet amet Lorem ipsum dolor sit amet amet consectetur adipisicing elit. Hic, inventore?',
   
-    image: img4,
+    image: sattu,
   },
   {
     title: 'DELICIOUS HOME MADE <span style="color:orange">Lassi</span>',
     subtitle: 'Create engaging content Lorem ipsum dolor sit amet amet Lorem ipsum dolor sit amet amet consectetur adipisicing elit. Hic, inventore?',
-    image: img5,
+    image: lassi,
   },
   {
     title: 'DELICIOUS HOME MADE <span style="color:orange">Mutter kacuari</span>',
     subtitle: 'Create engaging content Lorem ipsum dolor sit amet amet Lorem ipsum dolor sit amet amet consectetur adipisicing elit. Hic, inventore?',
  
-    image: img6,
+    image: mutterkachodi,
   },
   // Add more slide objects as needed
 ];
@@ -126,23 +116,17 @@ export const HeroSlider = ({ slides }) => {
                    </div>
                     <div className='text-start mt-14 flex gap-4   '>
                       <button className='text-white text-lg font-bold bg-orange-500 px-[30px] xl:py-[8px] sm:px-[20px]  rounded '>
-                       View Menu
+                       VIEW MENU
                       </button>
-                      <button className='text-white text-lg font-bold bg-orange-500 px-[30px] xl:py-[8px] sm:px-[20px] rounded '>
-                       View Menu
-                      </button>
+                  
                     </div>
                     
                   </div>
                 </div>
               </div>
               <div className='relative max-sm:mt-5 sm:px-2 max-sm:px-3  min-h-[500px] lg:sm:h-full'>
-                <img className=' sm:min-h-[450px]  lg:h-[490px] max-sm:h-[260px] lg:w-[780px] max-sm:w-full sm:w-full rounded border-2 shadow-lg border-orange-400 p-[1px] shadow-gray-700 ' src={slide.image} alt='' />
+                <img className=' sm:min-h-[450px]  lg:h-[490px] max-sm:h-[350px] lg:w-[780px] max-sm:w-full sm:w-full rounded border-2 shadow-lg border-orange-400 p-[1px] shadow-gray-700 ' src={slide.image} alt='' />
               </div>
-
-          
-
-           
             </div>
           </SwiperSlide>
         ))}

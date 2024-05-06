@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
-import img1 from '../../assets/images/New folder/asset 17.jpeg'
+import img1 from '../../assets/images/asset 17.jpeg'
 import { ProgressBar, progressData } from '../Progressbar/progressbar';
 
 export const GreatTest = () =>{

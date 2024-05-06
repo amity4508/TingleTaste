@@ -7,12 +7,32 @@ import "swiper/css/effect-fade";
 import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
 import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 // import img1 from "../../assets/images/New folder/asset 15.jpeg"
-import img1 from "../../assets/images/New folder/asset 15.jpeg"
-import imgOneee from "../../assets/images/New folder/assetImag.jpeg"
+import img1 from "../../assets/images/asset 15.jpeg"
+import imgOneee from "../../assets/images/assetImag.jpeg"
+
+import Burger from "../../assets/images/data/burger.jpg"
+import cholekulche from "../../assets/images/data/cholekulche.jpg"
+import coldcoffee from "../../assets/images/data/coldcoffee.jpg"
+import grillsandwich from "../../assets/images/data/grillsandwich.jpg"
+import idli from "../../assets/images/data/idli.jpg"
+import kachorialoosabzi from "../../assets/images/data/kachori-with-aloo-sabzi.jpg"
+import lassi from "../../assets/images/data/lassi.webp"
+import littichokha from "../../assets/images/data/littichokha.jpg"
+import makhanakheer from "../../assets/images/data/makhanakheer.jpg"
+import momos from "../../assets/images/data/momos.webp"
+import pasta from "../../assets/images/data/pasta.jpg"
+import pavbhaji from "../../assets/images/data/pavbhaji.jpeg"
+import poha from "../../assets/images/data/poha.webp"
+import samosa from "../../assets/images/data/samosa.jpg"
+import sattu from "../../assets/images/data/sattu.webp"
+import springroll from "../../assets/images/data/springroll.jpg"
+import vada from "../../assets/images/data/vada.jpg"
+import vadapav from "../../assets/images/data/vadapav.jpg"
+
+
+
 
 import logo from "../../assets/images/logo.png"
-
-
 export const Festivle = () => {
   const FestivleData = [
     {
@@ -77,7 +97,7 @@ export const FestivleSlider = ({ festivle }) => {
     <div className="container mx-auto px-8 relative mt-10 ">
       <Swiper
         ref={swiperRef}
-        spaceBetween={10}
+        spaceBetween={20}
         autoplay={{
           delay: 2500,
           disableOnInteraction: false,
@@ -102,7 +122,7 @@ export const FestivleSlider = ({ festivle }) => {
       >
         {festivle.map((festivle, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-white shadow-lg border rounded-[20px] hover:bg-gray-600  hover:text-white min-h-[430px]   max-h-[400px] p-6 font-medium text-gray-500 group">
+            <div className="bg-white shadow-lg border rounded-[20px] hover:bg-gray-600  hover:text-white min-h-[430px]   max-h-[400px] p-6 font-medium text-gray-500 group ">
             <div className="company-logo">
                 <img className="h-[180px] w-full" src={festivle.companyLogo} alt="" />
               </div>

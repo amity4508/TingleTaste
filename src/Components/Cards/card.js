@@ -1,30 +1,37 @@
 import React, { useState  } from "react";
-import img1 from "../../assets/images/New folder/asset 10.jpeg";
+import matterKachaodi from "../../assets/images/data/mutterkachodi1.jpg";
+import littichokha from "../../assets/images/data/littichokha.jpg";
+import samosa from "../../assets/images/data/samose3.jpg";
+import burger from "../../assets/images/data/burger.jpg"
+import cholekulche from "../../assets/images/data/cholekulche.jpg"
+import makhanakheer from "../../assets/images/data/makhanakheer.jpg"
+// import samosa from "../../assets/images/data/samosa.jpg"
+import springroll from "../../assets/images/data/springroll.jpg"
 import { CiCamera } from "react-icons/ci";
 export const cardData = [
     {
-      image: img1,
-      category: "DESERT",
+      image: burger,
+      category: "BURGERS",
       title: "Baconnaise Angus",
       description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
     },
     
     {
-        image: img1,
-        category: "DESERT",
+        image: cholekulche,
+        category: "Litti Chokha",
         title: "Baconnaise Angus",
         description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
       {
-        image: img1,
-        category: "DESERT",
+        image: springroll,
+        category: "Spring Roll",
         title: "Baconnaise Angus",
         description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
       {
-        image: img1,
-        category: "DESERT",
-        title: "Baconnaise Angus",
+        image: matterKachaodi,
+        category: "Matter Kachaodi",
+        title: "Matar Kachaodi",
         description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
       },
    
@@ -36,10 +43,10 @@ export const Card = ({ cardData }) => {
     <>
       <div className="container mx-auto px-8 grid  max-sm:gird-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5  ">
         {cardData.map((card, index) => (
-          <div key={index} className="card bg-white shadow-xl shadow-gray-200 ">
-            <div className="overflow-hidden">
+          <div key={index} className="card  bg-white shadow-xl shadow-gray-200 transition duration-700 hover:scale-110">
+            <div className="">
               <img
-                className="transition duration-700 hover:scale-110"
+                className=" rounded "
                 src={card.image}
                 alt=""
               />
@@ -65,19 +72,46 @@ export const Card = ({ cardData }) => {
     </>
   );
 };
+// ----------------Card Img 
 
 
+export const cardImg = [
+  {
+    image: matterKachaodi,
+    category: "DESERT",
+    title: "Baconnaise Angus",
+    description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
+  },
+  
+  {
+      image: littichokha,
+      category: "DESERT",
+      title: "Baconnaise Angus",
+      description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
+    },
+    {
+      image: samosa,
+      category: "DESERT",
+      title: "Baconnaise Angus",
+      description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
+    },
+    {
+      image: makhanakheer,
+      category: "DESERT",
+      title: "Baconnaise Angus",
+      description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
+    },
+ 
 
+];
 
-export const CardImg = ({ cardData }) => {
+export const CardImg = ({ cardImg }) => {
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
-
   const openModal = (image) => {
     setSelectedImage(image);
     setModalOpen(true);
   };
-
   const closeModal = () => {
     setSelectedImage(null);
     setModalOpen(false);
@@ -86,11 +120,11 @@ export const CardImg = ({ cardData }) => {
   return (
     <>
       <div className="container mx-auto px-8 grid  max-sm:gird-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-5">
-        {cardData.map((card, index) => (
+        {cardImg.map((card, index) => (
           <div key={index} className="card bg-white shadow-xl shadow-gray-200 group relative">
             <div className="overflow-hidden" onClick={() => openModal(card.image)}>
               <img
-                className="transition duration-700 hover:scale-110"
+                className="transition duration-700 hover:scale-110 min-h-[250px] "
                 src={card.image}
                 alt=""
               />
@@ -99,14 +133,10 @@ export const CardImg = ({ cardData }) => {
               <div className="flex justify-center  invisible group-hover:visible">
                 <p className="bg-white rounded-sm  text-lg  text-gray-600 relative left-14 ">
                 <CiCamera className="text-2xl" onClick={() => openModal(card.image)} />
-
                 </p>
               </div>
-             
             </div>
-            
           </div>
-          
         ))}
       </div>
 
@@ -120,7 +150,6 @@ export const CardImg = ({ cardData }) => {
           </div>
         </div>
       )}
-
     </>
   );
 };

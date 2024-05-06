@@ -73,21 +73,18 @@
 //   );
 // };
 
-
-
-
-
 import React, { useState } from "react";
 
 import logo from "../../assets/images/logo.png";
 import logo2 from "../../assets/images/final logo tt copy.png";
 
 import { Link, NavLink } from "react-router-dom";
+import { SocialMedia } from "../SocialMedia/SocialMedia";
 
 export const menuItems = [
   { label: "Home", link: "/" },
 
-  { label: "Contact Us", link: "/contact-us" },
+  { label: "Menu", link: "/#" },
 ];
 
 export const Navbar = () => {
@@ -135,8 +132,7 @@ export const Navbar = () => {
             <div className=" flex container mx-auto  ">
               {/* logo */}
               <div class="md:order-1 max-sm:w-full  sm:w-full  flex items-start justify-center py-2  max-sm:bg-white">
-              <img className="h-[70px] w-[200px]" src={logo} alt="logo" />
-
+                <img className="h-[70px] w-[200px]" src={logo} alt="logo" />
               </div>
 
               <div className="md:order-2 flex items-center justify-end logobg   sm:w-full  hidden sm:block px-5">
@@ -190,35 +186,42 @@ export const Navbar = () => {
                           )}
                         </li>
                       ))}
+                      <SocialMedia />
                     </ul>
                   </div>
                 </div>
               </div>
-
-
             </div>
           </div>
         </nav>
       </div>
       {showSidebar && (
         <div className="fixed inset-0 bg-blue-900  text-white z-50 w-[200px] p-4">
-          <div className="flex pl-28 p-1 ">
-            <button onClick={closeSidebar} className="text-white">
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+          <div className="flex  p-1 justify-between ">
+            <div>
+              <img className="h-[6  0px] w-[100px]  " src={logo} alt="logo" />
+            </div>
+            <div>
+              <button
+                onClick={closeSidebar}
+                className="text-white bg-gray-500 rounded p-1"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
-              </svg>
-            </button>
+                <svg
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  ></path>
+                </svg>
+              </button>
+            </div>
           </div>
 
           {/* sidebar */}
@@ -244,6 +247,7 @@ export const Sidebar = () => {
       <Link>
         <p className="mt-5">Home</p>
       </Link>
+      <SocialMedia />
     </div>
   );
 };

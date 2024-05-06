@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 import { Hero } from '../../Components/Hero/Hero';
-import { Card, CardImg, cardData } from '../../Components/Cards/card';
+import { Card, CardImg, cardData, cardImg } from '../../Components/Cards/card';
 import { Timing } from '../../Components/Home/Timing';
 import { Festivle } from '../../Components/Home/Festivle';
 import { GreatTest } from '../../Components/Home/GreatTest';
@@ -29,10 +29,7 @@ export const Home = () =>{
         <Card2 card2Data={card2Data} />
         <Menu/>
         <Testimonial/>
-        <CardImg cardData={cardData} />
-
-
-
+        <CardImg cardImg={cardImg} />
    </div>
    </>
 
