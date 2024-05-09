@@ -4,6 +4,7 @@ import { Navbar } from '../Components/Navbar/Navbar';
 import { Home } from '../Pages/HomeLayouts/home';
 import { About } from '../Pages/About';
 import { Footer } from '../Components/Footer/Footer';
+import { Menu } from '../Components/MenuList/Menu';
 
 export const UserRoute = () => {
   return (
@@ -12,7 +13,7 @@ export const UserRoute = () => {
     <Routes>
 
     <Route path='/' element={<Home />} />
-    <Route path='/  ' element={<About />} />
+    <Route path='menu-list/' element={<Menu/>} />
   
     </Routes>
     <Footer/>

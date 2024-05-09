@@ -10,24 +10,16 @@ import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import img1 from "../../assets/images/asset 15.jpeg"
 import imgOneee from "../../assets/images/assetImag.jpeg"
 
-import Burger from "../../assets/images/data/burger.jpg"
-import cholekulche from "../../assets/images/data/cholekulche.jpg"
-import coldcoffee from "../../assets/images/data/coldcoffee.jpg"
-import grillsandwich from "../../assets/images/data/grillsandwich.jpg"
-import idli from "../../assets/images/data/idli.jpg"
-import kachorialoosabzi from "../../assets/images/data/kachori-with-aloo-sabzi.jpg"
-import lassi from "../../assets/images/data/lassi.webp"
-import littichokha from "../../assets/images/data/littichokha.jpg"
-import makhanakheer from "../../assets/images/data/makhanakheer.jpg"
-import momos from "../../assets/images/data/momos.webp"
-import pasta from "../../assets/images/data/pasta.jpg"
-import pavbhaji from "../../assets/images/data/pavbhaji.jpeg"
-import poha from "../../assets/images/data/poha.webp"
-import samosa from "../../assets/images/data/samosa.jpg"
-import sattu from "../../assets/images/data/sattu.webp"
-import springroll from "../../assets/images/data/springroll.jpg"
-import vada from "../../assets/images/data/vada.jpg"
-import vadapav from "../../assets/images/data/vadapav.jpg"
+import christmas from "../../assets/images/christmas.jpg"
+import diwali  from "../../assets/images/diwali.jpg"
+import holi from "../../assets/images/holi.jpg"
+import eidulFitr from "../../assets/images/eid.png"
+import pongal from "../../assets/images/pongal.jpeg"
+import navratri from "../../assets/images/navratri.jpg"
+import ganeshChaturthi  from "../../assets/images/ganesh chaturthi.jpg"
+import durgaPuja  from "../../assets/images/durga pooja .jpg"
+import Onam from "../../assets/images/onam.jpg"
+import makarSankranti from "../../assets/images/makar shankaranti.jpg" 
 
 
 
@@ -37,26 +29,55 @@ export const Festivle = () => {
   const FestivleData = [
     {
       quote:
-        "Aptara’sertise has streamlined and simplified our have a single, trusted content production partner to handle all of our digital publishing needs.",
-      author: "Director, Publishing Operations",
-      companyLogo: img1,
+        "Indulge in our delectable sweets like Laddoos, Jalebis, Kaju Katli, and Gulab Jamun, best for celebrating the joyous event of Diwali.",
+      author: "Diwali - Festival of Lights",
+      companyLogo: diwali,
     },
     {
       quote:
-        "Aptara’s unique combination of digital technology and publishing expertise has streamlined and simplified our operations. We now have a single, trusted content production partner to handle all of our digital publishing needs. ",
-      author: "Director, Publishing Operations",
-      companyLogo: img1,
+        "Add coloration for your celebrations with our Gujiyas, Thandai, and other festive treats with a purpose to make your Holi celebrations even greater colourful.",
+      author: "Holi - Festival of Colors",
+      companyLogo: holi,
+    },
+
+    {
+      quote: "Spread the holiday cheer with our Plum Cakes, Kulkuls, and other Christmas specials so as to add a touch of sweetness to your celebrations.",
+      author: "Christmas - Festival of Joy",
+      companyLogo: christmas,
+    },
+  
+    {
+      quote: "Celebrate the bounty of the harvest with our Pongal and Vada, traditional South Indian dishes which are an ought-to-have at some stage in this festive season.",
+      author: "Pongal - Harvest Festival",
+      companyLogo: pongal,
     },
     {
-      quote: "Another testimonial quote of digital of digital technology and publishing expertise has streamlined and simplified technology and publishing expertise has streamlined and simplified.",
-      author: "Another Author",
-      companyLogo: logo,
+      quote: "Enjoy our unique fasting ingredients like Sabudana Khichdi, Kuttu Ki Puri, and Singhare Ke Atte Ka Halwa, perfect for staring at the Navratri fast.",
+      author: "Navratri - Festival of Nine Nights",
+      companyLogo: navratri,
     },
     {
-      quote: "Another testimonial quote of digital of digital technology and publishing expertise has streamlined and simplified technology and publishing expertise has streamlined and simplified.",
-      author: "Another Author",
-      companyLogo: logo,
+      quote: "Celebrate the victory of accuracy over evil with our Bengali chocolates like Rasgulla, Sandesh, and Mishti Doi, ideal for presenting to the goddess and sharing with cherished ones.",
+      author: "Durga Puja - Festival of Goddess Durga",
+      companyLogo: durgaPuja,
     },
+
+    {
+      quote: "Experience the flavors of Kerala with our Onam Sadhya, a conventional feast served on banana leaves, proposing a variety of delicious dishes like Avial, Thoran, and Payasam.",
+      author: "Onam - Harvest Festival of Kerala",
+      companyLogo: Onam,
+    },
+    {
+      quote: "Celebrate the advent of spring with our Til Laddoos, Gajar Ka Halwa, and different festive treats that are an image of prosperity and right fortune.",
+      author: "Makar Sankranti - Festival of Harvest",
+      companyLogo: makarSankranti,
+    },
+    {
+      quote: "Enjoy the spirit of Eid with our Sheer Khurma, and other traditional dishes which are ideal for sharing with a circle of relatives and friends.",
+      author: "Eid-ul-Fitr - Festival of Breaking the Fast",
+      companyLogo: eidulFitr,
+    },
+   
     // Add more testimonials as needed
   ];
 
@@ -68,9 +89,10 @@ export const Festivle = () => {
         backgroundAttachment: "fixed",
       }}>
         <div className=" container mx-auto px-8 text-center "> 
-        <p className="text-white text-xl">Ready for the coolest food</p>
-        <h1 className="text-4xl font-semibold text-white mt-5 mb-8" >COMING FESTIVALS</h1>
-
+        
+        <p className="text-white text-xl">Celebrate Festivals with Our Special Occasion Foods!</p>
+        <h1 className="text-4xl font-semibold text-white mt-5 mb-8 uppercase" >Coming Festivals</h1>
+        
         </div>
 
       <div className="flex max-sm:flex-col gap-5">
@@ -82,7 +104,6 @@ export const Festivle = () => {
     </div>
   );
 };
-
 
 export const FestivleSlider = ({ festivle }) => {
   const swiperRef = useRef(null);
@@ -103,7 +124,7 @@ export const FestivleSlider = ({ festivle }) => {
           disableOnInteraction: false,
         }}
         navigation={{
-          nextEl: ".button-next",
+          nextEl: ".button-next",   
           prevEl: ".button-prev",
         }}
         breakpoints={{
@@ -122,11 +143,10 @@ export const FestivleSlider = ({ festivle }) => {
       >
         {festivle.map((festivle, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-white shadow-lg border rounded-[20px] hover:bg-gray-600  hover:text-white min-h-[430px]   max-h-[400px] p-6 font-medium text-gray-500 group ">
+            <div className="bg-white shadow-lg border rounded-[20px] hover:bg-gray-600  hover:text-white min-h-[390px] max-h-[390px] p-6 font-medium text-gray-500 group ">
             <div className="company-logo">
-                <img className="h-[180px] w-full" src={festivle.companyLogo} alt="" />
+                <img className="h-[170px] w-full rounded" src={festivle.companyLogo} alt="" />
               </div>
-
               <p className="font-semibold text-gray-800 text-lg group-hover:text-orange-500 py-2">{festivle.author}</p>
 
               <p className="text-base">{festivle.quote}</p>

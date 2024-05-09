@@ -6,9 +6,9 @@ export const SocialMedia = () =>{
     return(
         <>
         <div className="socialMedai text-orange-500 flex gap-5 items-center justify-center py-6 text-4xl ">
-       <p><Link to="" ><FaFacebookSquare /></Link></p>
-       <p><Link to="" ><FaLinkedin /></Link></p>
-       <p><Link to="" ><FaInstagramSquare /></Link></p>
+       <p className="hover:text-orange-400" ><Link to="" ><FaFacebookSquare /></Link></p>
+       <p className="hover:text-orange-400" ><Link to="" ><FaLinkedin /></Link></p>
+       <p className="hover:text-orange-400" ><Link to="" ><FaInstagramSquare /></Link></p>
       </div>
         </>
     )

@@ -13,29 +13,27 @@ export const cardData = [
       image: burger,
       category: "BURGERS",
       title: "Baconnaise Angus",
-      description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
+      description: "Burgers are a popular fast food item such as a cooked patty of beans, lentils, or vegetables, served in a sliced bread roll referred to as a bun. The available types of burgers based."
     },
     
     {
         image: cholekulche,
-        category: "Litti Chokha",
+        category: "chole Kulche",
         title: "Baconnaise Angus",
-        description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
+        description: "Our very very own traditional dish from the Bihar and Jharkhand regions of India is now right here. Consisting of filled complete wheat dough balls (litti) which can be roasted over charcoal."
       },
       {
         image: springroll,
         category: "Spring Roll",
         title: "Baconnaise Angus",
-        description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
+        description: "Spring rolls, a famous Asian appetizer which includes a filling, frequently made with vegetables, paneer, or cheese rolled inside a thin pastry wrapper after which deep-fried or on occasion served clean. "
       },
       {
         image: matterKachaodi,
         category: "Matter Kachaodi",
         title: "Matar Kachaodi",
-        description: "Interdum iusto pulvinar consequuntur augue optio faguroso otto."
+        description: `"Matar Kachori" or "Matar Ki Kachori" is a famous Indian snack made with a spiced green pea filling encased in a crisp, deep-fried pastry. Matar kachori is an excessive-calorie and high-fat snack because of deep frying. Enjoy the flavorful treat.`
       },
-   
-  
   ];
 
 export const Card = ({ cardData }) => {
@@ -57,9 +55,9 @@ export const Card = ({ cardData }) => {
                   {card.category}
                 </p>
               </div>
-              <h1 className="text-xl font-semibol text-center text-gray-500 ">
+              {/* <h1 className="text-xl font-semibol text-center text-gray-500 ">
                 {card.title}
-              </h1>
+              </h1> */}
               <p className="text-gray-600 py-2">
                 {card.description}
               </p>

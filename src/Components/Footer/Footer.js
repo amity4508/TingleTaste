@@ -20,8 +20,7 @@ export const Footer = () =>{
           
           <div className="bottombar text-center py-3 border-t-2">
             <div className="container text-gray-600">
-            © 2017 Gourmet - info@restaurant.com - +02 123458992 - Wall Street Avenue 502, New York - Restaurant Template Handmade by schiocco.io
-
+            TingleTaste © 2024. All Rights Reserved.2024
             </div>
           </div>
 

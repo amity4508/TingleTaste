@@ -14,36 +14,34 @@ export const Testimonial = () => {
   const testimonials = [
     {
       quote:
-        "Lorem ipsum dolor sitame consectetur adipisicing elitosed do eiusmod tempor malo incididunt ut labore et dolore atroce.",
-      author: "Director, Publishing Operations",
+        "I can't specify how much I love the variety and flavor of the dishes from Tingle Taste! Each meal appears like it's been lovingly prepared in a domestic kitchen, with spices which can be simply best. The flavors are so true, and it's clear that a lot of care and attention is going into every dish. This has become my go-to vicinity for Indian specialties, and I cannot recommend it enough!",
       img: testim1,
-      company: "Twitter",
+      company: "Gypr",
     },
 
     {
       quote:
-        "Aptara’s unique combination of digital technology and publishing expertise has streamlined and simplified our operations. We now have a single, trusted content production partner to handle all of our digital publishing needs. ",
-      author: "Director, Publishing Operations",
+        ". From the moment I took my first bite, I turned into transported back to the streets of India. The meals here are surely first rate! Each dish is a culinary masterpiece, bursting with taste and authenticity. It's obtrusive that the cooks take extraordinary satisfaction in their work, as the excellence of the food is top notch. If you're searching out a real taste of India, look no further. Tingle Taste is a gem!",
       img: testim2,
-      company: "Twitter",
+      company: "EquipMedy"
     },
     {
       quote:
-        "Another testimonial quote of digital of digital technology and publishing expertise has streamlined and simplified technology and publishing expertise has streamlined and simplified.",
+        "I recently visited here and ordered a whole lot of dishes for a small gathering, and I have to say, each person was blown away! The flavors had been wealthy and delicious, and the taste of the food was top-notch. It becomes like having a home made experience. Needless to mention, I'll actually be recommending it here again!",
       author: "Another Author",
       img: testim1,
-      company: "Twitter",
+      company: "TingleTaste",
     },
     {
       quote:
-        "Another testimonial quote of digital of digital technology and publishing expertise has streamlined and simplified technology and publishing expertise has streamlined and simplified.",
+        ". I stumbled upon Tingle Taste at the same time as searching for genuine Indian food, and I'm so happy I did! The meals are yummy, and the service is excellent. It's clear that the team at the back of Tingle Taste is passionate about delivering high-quality Indian specialties to their customers. I've suggested it to all my pals and family, and I can't wait to try more dishes!",
       author: "Another Author",
       img: testim2,
-      company: "Twitter",
+      company: "TeacherCool",
     },
     {
       quote:
-        "Another testimonial quote of digital of digital technology and publishing expertise has streamlined and simplified technology and publishing expertise has streamlined and simplified.",
+        "As someone who loves Indian meals, I was pleased to discover Tingle Taste. I've tried several dishes so far, and each one has been a delight! The flavors are so true, and the satisfaction is next level. It's a super way to experience all Indian specialties from the comfort of staying at one place, specifically whilst you're yearning for a taste of India. I'll actually be an everyday consumer!",
       author: "Another Author",
       img: testim1,
       company: "Twitter",
@@ -85,8 +83,8 @@ export const TestimonialSlider = ({ testimonials }) => {
           disableOnInteraction: false,
         }}
         pagination={{
+          dynamicBullets: true,
           clickable: true,
-          el: ".swiper-pagination",
         }}
         navigation={{
           nextEl: ".button-next",
@@ -108,7 +106,7 @@ export const TestimonialSlider = ({ testimonials }) => {
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
-            <div className="  min-h-[300px] max-h-[300px] text-gray-400 group cur">
+            <div className="  min-h-[370px] max-h-[370px] text-gray-400 group">
               {/* <div className="bg-white rounded p-4">
                 <p className="text-base font-[400]">{testimonial.quote}</p>
               </div> */}
@@ -137,7 +135,7 @@ export const TestimonialSlider = ({ testimonials }) => {
         ))}
       </Swiper>
 
-      <div className="flex justify-center ">
+      {/* <div className="flex justify-center ">
         <div className="swiper-pagination  space-x-2">
           {[0, 1, 2].map((index) => (
             <div
@@ -147,7 +145,7 @@ export const TestimonialSlider = ({ testimonials }) => {
             ></div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -84,7 +84,7 @@ import { SocialMedia } from "../SocialMedia/SocialMedia";
 export const menuItems = [
   { label: "Home", link: "/" },
 
-  { label: "Menu", link: "/#" },
+  { label: "Menu", link: "menu-list/" },
 ];
 
 export const Navbar = () => {
@@ -135,7 +135,7 @@ export const Navbar = () => {
                 <img className="h-[70px] w-[200px]" src={logo} alt="logo" />
               </div>
 
-              <div className="md:order-2 flex items-center justify-end logobg   sm:w-full  hidden sm:block px-5">
+              <div className="md:order-2  items-center justify-end logobg   sm:w-full  hidden sm:block px-5">
                 <div className="flex items-center justify-center h-full">
                   <div className="flex flex-col items-center">
                     <ul className="flex flex-col items-center  sm:flex-row  md:gap-10 max-sm:gap-4 sm:gap-4">

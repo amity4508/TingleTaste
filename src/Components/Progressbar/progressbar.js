@@ -57,8 +57,8 @@ export const ProgressBar = ({ progressData }) => {
   };
   
   export const progressData = [
-      { title: 'CARNIVOROUS', progress: 0, total: 100, interval: 100, stopValue: 50 },
-      { title: 'VEGETARIAN', progress: 0, total: 100, interval: 150, stopValue: 60 },
+      { title: 'Aloo Tikki Burger: ', progress: 0, total: 100, interval: 100, stopValue: 50 },
+      { title: 'Paneer Burger: ', progress: 0, total: 100, interval: 150, stopValue: 60 },
     ];
   
   

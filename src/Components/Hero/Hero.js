@@ -24,39 +24,37 @@ export const Hero = () =>{
     )
 }
 
-
-
 export const slides = [
   {
     title: `DELICIOUS HOME MADE <span style="color:orange">Litti Chokha</span> `,
-    subtitle: 'Create sum dolor  amet Lorem ipsum dolor sit  amet Lorem ipsum dolor sit  sit amet amet consectetur adipisicing elit. Hic, inventore?',
+    subtitle: `Our very very own traditional dish from the Bihar and Jharkhand regions of India is now right here. Consisting of filled complete wheat dough balls (litti) which can be roasted over charcoal or cow dung cakes and served with a spicy mashed vegetable dish (chokha), typically made with roasted eggplant, tomatoes, and potatoes. Here are the to be had kinds of litti chokha based on their versions:`,
     image: littichokha,
   },
   {
     title: 'DELICIOUS HOME MADE  <span style="color:orange">Makhana Kheer</span> ',
-    subtitle: 'Create sum  amet Lorem ipsum dolor sit  dolor sit amet amet consectetur adipisicing elit. Hic, inventore?',
+    subtitle:  `A creamy and delicious dessert made with makhana, additionally called fox nuts or lotus seeds. It is a popular dish in North India, in particular throughout festivals and special occasions. Makhana kheer is a delicious and nutritious dessert that is simple to make and perfect for pleasurable your candy cravings.`,
     image: makhanakheer,
   },
   {
     title: 'DELICIOUS HOME MADE <span style="color:orange"> Poha</span>',
-    subtitle: 'Create engaging content Lorem ipsum dolor sit amet amet Lorem ipsum dolor sit amet amet consectetur adipisicing elit. Hic, inventore?',
+    subtitle: `Enjoy the most popular breakfast dish in India crafted from flattened, dehusked rice. It is mild, clean to digest, and a nutritious meal option. Poha is wealthy in carbohydrates, which provide energy, and it's also a good source of iron and fiber. It is low in calories and fats, making it a wholesome breakfast choice`,
   
     image: poha,
   },
   {
     title: 'DELICIOUS HOME MADE <span style="color:orange"> Sattu</span>',
-    subtitle: 'Create engaging content Lorem ipsum dolor sit amet amet Lorem ipsum dolor sit amet amet consectetur adipisicing elit. Hic, inventore?',
+    subtitle: `Introducing our fresh and nutritious Sattu drink, a conventional Indian beverage, it truly is best for staying cool and energized! Sattu, made from roasted gram flour, is blended with water, sugar, and a hint of lemon juice or spices to create a delicious and healthy drink. Whether you're looking for a cool drink to overcome the heat or a nutritious option to maintain you going, our Sattu drink is the correct choice. Try it now and revel in the flavor of subculture with every sip!`,
   
     image: sattu,
   },
   {
     title: 'DELICIOUS HOME MADE <span style="color:orange">Lassi</span>',
-    subtitle: 'Create engaging content Lorem ipsum dolor sit amet amet Lorem ipsum dolor sit amet amet consectetur adipisicing elit. Hic, inventore?',
+    subtitle:`Popular traditional yogurt-based totally drink from the Indian subcontinent. It is made with the aid of blending yogurt with water and spices, and on occasion fruit or sugar, to create a fresh and nutritious beverage. Lassi is understood for its cooling properties and is often served chilled, specially in the course of warm summer time months. It is also an excellent supply of probiotics, calcium, and protein, making it a wholesome and clean beverage preference.`,
     image: lassi,
   },
   {
     title: 'DELICIOUS HOME MADE <span style="color:orange">Mutter kacuari</span>',
-    subtitle: 'Create engaging content Lorem ipsum dolor sit amet amet Lorem ipsum dolor sit amet amet consectetur adipisicing elit. Hic, inventore?',
+    subtitle:`"Matar Kachori" or "Matar Ki Kachori" is a famous Indian snack made with a spiced green pea filling encased in a crisp, deep-fried pastry. Matar kachori is an excessive-calorie and high-fat snack because of deep frying. However, it presents protein and fiber from the peas and some nutrients from the spices used. Enjoy the flavorful treat.`,
  
     image: mutterkachodi,
   },
@@ -106,15 +104,15 @@ export const HeroSlider = ({ slides }) => {
       >
         {slides && slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className=' flex max-sm:h-[80vh]  justify-between sm:flex-col lg:flex-row gap-30 max-sm:flex-col  relative bg-white pb-10 '>
+            <div className=' flex max-sm:h-[80vh]  justify-between sm:flex-col lg:flex-row  max-sm:flex-col  relative bg-white pb-2 '>
               <div className='  max-sm:h-full sm:py-5 max-sm:w-full sm:w-full lg:w-1/2 '>
                 <div className='flex justify-center container mx-auto mt-10 xl:px-8 sm:px-2 max-sm:px-3 '>
                   <div>
-                   <div className='min-h-[160px]'>
-                   <h1  className='xl:text-5xl sm:text-4xl md:text-3xl max-sm:text-3xl font-extrabold text-start leading-[60px] jersey-25-regular text-black 'dangerouslySetInnerHTML={{ __html: slide.title}} ></h1>
-                    <h1 className='mt-14 max-sm:mt-8 text-2xl max-sm:text-base  font-medium text-start text-black'>{slide.subtitle}</h1>
+                   <div className=''>
+                   <h1  className='xl:text-5xl sm:text-4xl md:text-3xl max-sm:text-3xl font-extrabold text-start leading-[60px] jersey-25-regular text-black freeman-regular 'dangerouslySetInnerHTML={{ __html: slide.title}} ></h1>
+                    <h1 className='mt-8 max-sm:mt-2 text-lg max-sm:text-base  font-medium text-start text-gray-800 prata-regular'>{slide.subtitle}</h1>
                    </div>
-                    <div className='text-start mt-14 flex gap-4   '>
+                    <div className='text-start mt-8 flex gap-4   '>
                       <button className='text-white text-lg font-bold bg-orange-500 px-[30px] xl:py-[8px] sm:px-[20px]  rounded '>
                        VIEW MENU
                       </button>
