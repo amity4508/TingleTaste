@@ -131,8 +131,8 @@ export const Navbar = () => {
 
             <div className=" flex container mx-auto  ">
               {/* logo */}
-              <div class="md:order-1 max-sm:w-full  sm:w-full  flex items-start justify-center py-2  max-sm:bg-white">
-                <img className="h-[70px] w-[200px]" src={logo} alt="logo" />
+              <div class="md:order-1 max-sm:w-full  sm:w-full  flex items-start justify-center py-2  max-sm:bg-white" >
+                <Link to="/" ><img className="h-[70px] w-[200px]" src={logo} alt="logo" /></Link>
               </div>
 
               <div className="md:order-2  items-center justify-end logobg   sm:w-full  hidden sm:block px-5">
@@ -235,18 +235,14 @@ export const Navbar = () => {
 export const Sidebar = () => {
   return (
     <div className="px-2 pt-2  text-xl font-bold ">
-      <Link>
+      <Link to="/" >
         <p className="mt-5">Home</p>
       </Link>
-      <Link>
-        <p className="mt-5">Home</p>
+      <Link to="menu-list/" >
+        <p className="mt-5">Menu</p>
       </Link>
-      <Link>
-        <p className="mt-5">Home</p>
-      </Link>
-      <Link>
-        <p className="mt-5">Home</p>
-      </Link>
+   
+     
       <SocialMedia />
     </div>
   );

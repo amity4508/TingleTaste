@@ -6,8 +6,11 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
 import { Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
-import testim1 from "../../assets/images/asset36.jpeg";
-import testim2 from "../../assets/images/asset38.jpeg";
+import testim1 from "../../assets/images/testim1.jpeg";
+import testim2 from "../../assets/images/testim2.jpg";
+import testim3 from "../../assets/images/testim3.jpg";
+import testim4 from "../../assets/images/testim4.jpeg";
+import testim5 from "../../assets/images/testim5.jpg";
 import { CiCamera } from "react-icons/ci";
 
 export const Testimonial = () => {
@@ -16,35 +19,40 @@ export const Testimonial = () => {
       quote:
         "I can't specify how much I love the variety and flavor of the dishes from Tingle Taste! Each meal appears like it's been lovingly prepared in a domestic kitchen, with spices which can be simply best. The flavors are so true, and it's clear that a lot of care and attention is going into every dish. This has become my go-to vicinity for Indian specialties, and I cannot recommend it enough!",
       img: testim1,
-      company: "Gypr",
+      author: "Heena Khan",
+
+      company: "Gypr Pvt Ltd",
     },
 
     {
       quote:
         ". From the moment I took my first bite, I turned into transported back to the streets of India. The meals here are surely first rate! Each dish is a culinary masterpiece, bursting with taste and authenticity. It's obtrusive that the cooks take extraordinary satisfaction in their work, as the excellence of the food is top notch. If you're searching out a real taste of India, look no further. Tingle Taste is a gem!",
       img: testim2,
+      author: "Ekta Singh",
       company: "EquipMedy"
     },
     {
       quote:
         "I recently visited here and ordered a whole lot of dishes for a small gathering, and I have to say, each person was blown away! The flavors had been wealthy and delicious, and the taste of the food was top-notch. It becomes like having a home made experience. Needless to mention, I'll actually be recommending it here again!",
       author: "Another Author",
-      img: testim1,
+      img: testim3,
+      author: "Another Author",
+
       company: "TingleTaste",
     },
     {
       quote:
         ". I stumbled upon Tingle Taste at the same time as searching for genuine Indian food, and I'm so happy I did! The meals are yummy, and the service is excellent. It's clear that the team at the back of Tingle Taste is passionate about delivering high-quality Indian specialties to their customers. I've suggested it to all my pals and family, and I can't wait to try more dishes!",
-      author: "Another Author",
-      img: testim2,
-      company: "TeacherCool",
+      author: "Priya",
+      img: testim4,
+      company: "BitBeeMedia",
     },
     {
       quote:
         "As someone who loves Indian meals, I was pleased to discover Tingle Taste. I've tried several dishes so far, and each one has been a delight! The flavors are so true, and the satisfaction is next level. It's a super way to experience all Indian specialties from the comfort of staying at one place, specifically whilst you're yearning for a taste of India. I'll actually be an everyday consumer!",
-      author: "Another Author",
-      img: testim1,
-      company: "Twitter",
+      author: "Amit Yadav",
+      img: testim5,
+      company: "Gypr Pvt Ltd",
     },
     // Add more testimonials as needed
   ];

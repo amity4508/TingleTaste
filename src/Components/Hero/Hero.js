@@ -1,5 +1,5 @@
 
-import React, { useRef, useState } from 'react';
+import React, { useRef} from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 import lassi from "../../assets/images/data/lassi.webp"
@@ -16,6 +16,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 // import required modules
 import { Autoplay, Pagination, Navigation, EffectFade, } from 'swiper/modules';
+import { NavLink } from 'react-router-dom';
 export const Hero = () =>{
     return(
         <>
@@ -58,7 +59,6 @@ export const slides = [
  
     image: mutterkachodi,
   },
-  // Add more slide objects as needed
 ];
 
 
@@ -73,24 +73,16 @@ export const HeroSlider = ({ slides }) => {
 
   return (
     <div className=' container mx-auto bg-white pb-10 relative '>
-      {/* <div className='left-[-79px] z-10 top-[40%] fixed  '>
-        <button className='text-white text-lg bg-orange-500 px-[50px] py-[6px] rotate-[-90deg] '>
-          Enquire Now
-        </button>
-      </div> */}
+      
       <Swiper
         ref={swiperRef}
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         effect={'fade'}
-        // pagination={{
-        //   clickable: true,
-        //   el: '.swiper-pagination',
-        // }}
              pagination={{
           dynamicBullets: true,
           clickable: true,
@@ -104,19 +96,20 @@ export const HeroSlider = ({ slides }) => {
       >
         {slides && slides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className=' flex max-sm:h-[80vh]  justify-between sm:flex-col lg:flex-row  max-sm:flex-col  relative bg-white pb-2 '>
+            <div className=' flex h-[79vh] justify-between sm:flex-col lg:flex-row  max-sm:flex-col  relative bg-white pb-2 '>
               <div className='  max-sm:h-full sm:py-5 max-sm:w-full sm:w-full lg:w-1/2 '>
                 <div className='flex justify-center container mx-auto mt-10 xl:px-8 sm:px-2 max-sm:px-3 '>
                   <div>
                    <div className=''>
                    <h1  className='xl:text-5xl sm:text-4xl md:text-3xl max-sm:text-3xl font-extrabold text-start leading-[60px] jersey-25-regular text-black freeman-regular 'dangerouslySetInnerHTML={{ __html: slide.title}} ></h1>
-                    <h1 className='mt-8 max-sm:mt-2 text-lg max-sm:text-base  font-medium text-start text-gray-800 prata-regular'>{slide.subtitle}</h1>
+                    <p className='mt-8 max-sm:mt-2 text-lg max-sm:text-base  font-medium text-start text-gray-500 prata-regular'>{slide.subtitle}</p>
                    </div>
                     <div className='text-start mt-8 flex gap-4   '>
-                      <button className='text-white text-lg font-bold bg-orange-500 px-[30px] xl:py-[8px] sm:px-[20px]  rounded '>
+                    <NavLink to="menu-list/" >
+                    <button className='text-white text-lg font-bold bg-orange-500 px-[30px] xl:py-[8px] sm:px-[20px]  rounded '>
                        VIEW MENU
                       </button>
-                  
+                    </NavLink>
                     </div>
                     
                   </div>
